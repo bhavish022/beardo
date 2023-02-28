@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="top">
+              
+                 <i class="fa fa-bars icon" aria-hidden="true"></i>
+                <input type="checkbox" class="checkbox">
+                <a href="" class="logo"><img src="image/76-logo.webp" alt=""></a>
+                <ul>
+                <div class="dropdown">
+                  <span>Product</span>
+                        <div class="dropdown-content">
+                            <span>Beard</span>
+                            <span>Fragrance</span>
+                            <span>Combos</span>
+                            <span>Face</span>
+                        </div>
+                      </div>
+                        <li><a href="">Gift for man</a></li>
+                        <li><a href="">About us</a></li>
+                </ul>
+                <div class="search">
+                    <div>
+                        <a href="" class="logo"><img src="image/wallet.svg" alt=""></a>
+                        <a href="" class="logo"><img src="image/81-vip-club.webp" alt=""></a>
+                        <a href=""><img src="image/search.svg" alt=""></a>
+                        <a href=""><img src="image/cart.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown drop">
+              <span>My Account</span>
+              <div class="dropdown-content">
+                  <p>Hello World!</p>
+              </div>
+          </div>
+          </div>
+
+    </header>
+
+
+    <!-- Benner section -->
+    <div class="slides ">
+        <img src="image/7945-vd-new-launch-banner_375-x-392.jpg" alt="">
+        <img src="image/5028-beardo_dark_side_perfume_banner_375-x-392.jpg" alt="">
+        <img src="image/5257-beardo_toning_serum_new_launch_banner_375-x-392.jpg" alt="">
+        <img src="image/5534-winter-care-new-launch-banner_375-x-392_0111.jpg" alt="">
+        <img src="image/8473-growth-oil.jpg" alt="">
+        <img src="image/7180-beardo_skincare_award_new_launch_banner_375-x-392.jpg" alt="">
+    </div>
+
+    <!-- deal of time -->
+
+    <h1>Deal of the day</h1>
+    <div style="text-align: center;color: white;padding: 20px ;">
+      Deal And
+        <p id="demo"></p>
+    </div>
+
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 2</div>
+          <img src="image/3980-ban-the-tan-combo-512x512.webp" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 2</div>
+          <img src="image/6320-wsws-bourbon-a-512x420.png" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+
+
+
+    <!-- Most Searched -->
+
+    <div class="Searched">
+        <h2>Most Searched</h2>
+        <div class="Most">
+            <ul>
+                <li><a href="">Fragrances</a></li>
+                <li><a href="">Beard Growth Products</a></li>
+                <li><a href="">under 499</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer">
+            <div class="width">
+                <h4>PRODUCT</h4>
+                <div style="display: flex;">
+                    <div>
+                        <div class="pad"><span>Combos</span></div>
+                        <div class="pad"><span>Beard</span></div>
+                        <div class="pad"><span>Face</span></div>
+                        <div class="pad"><span>Hair</span></div>
+                        <div class="pad"><span>Body</span></div>
+                    </div>
+                    <div>
+                        <div class="pad"><span>Fragrance</span></div>
+                        <div class="pad"><span>Beardo Fashion</span></div>
+                        <div class="pad"><span>Trimmers</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="width">
+                <h4>ORDER</h4>
+                <div style="display: flex;">
+                    <div>
+                        <div class="pad"><span>  Account</span></div>
+                        <div class="pad"><span>Wishlist</span></div>
+                        <div class="pad"><span>Track Order</span></div>
+                        <div class="pad"><span>Beardo Wallet</span></div>
+                        <div class="pad"><span>Body</span></div>
+                    </div>
+                    <div>
+                        <div class="pad"><span>FAQ's</span></div>
+                        <div class="pad"><span>Terms & Conditions</span></div>
+                        <div class="pad"><span>Return & Refund Policy</span></div>
+                        <div class="pad"><span>VIP Club Terms</span></div>
+                        <div class="pad"><span>BeardoCash Term & Conditions</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="width">
+                <h4>COMMUNITY</h4>
+                 <div class="tex">
+                  <img src="image/77-fb.png" alt="">
+                  <img src="image/78-insta.png" alt="">
+                  <img src="image/79-twitter.png" alt="">
+                  <img src="image/80-youtube.png" alt="">
+                 </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+
+        var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("demo").innerHTML = hours + "h "
+                + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
